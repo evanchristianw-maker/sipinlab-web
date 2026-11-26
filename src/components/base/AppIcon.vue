@@ -1,4 +1,3 @@
-<!-- src/components/base/AppIcon.vue -->
 <script setup>
 // Kumpulan ikon garis (24x24) yang diekspor dari Figma sebagai path SVG.
 const props = defineProps({
