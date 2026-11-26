@@ -17,9 +17,7 @@ const alatTampil = computed(() =>
   ),
 )
 
-const totalTersedia = computed(() =>
-  daftarAlat.value.reduce((jumlah, a) => jumlah + a.tersedia, 0),
-)
+const totalTersedia = computed(() => daftarAlat.value.reduce((jumlah, a) => jumlah + a.tersedia, 0))
 
 function pinjam(kode) {
   const alat = daftarAlat.value.find((a) => a.kode === kode)

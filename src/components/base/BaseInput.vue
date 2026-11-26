@@ -2,36 +2,36 @@
 defineProps({
   modelValue: {
     type: [String, Number],
-    default: ''
+    default: '',
   },
   label: {
     type: String,
-    default: ''
+    default: '',
   },
   type: {
     type: String,
-    default: 'text'
+    default: 'text',
   },
   placeholder: {
     type: String,
-    default: ''
+    default: '',
   },
   required: {
     type: Boolean,
-    default: false
+    default: false,
   },
   disabled: {
     type: Boolean,
-    default: false
+    default: false,
   },
   error: {
     type: String,
-    default: ''
+    default: '',
   },
   hint: {
     type: String,
-    default: ''
-  }
+    default: '',
+  },
 })
 
 defineEmits(['update:modelValue'])
@@ -83,7 +83,9 @@ defineEmits(['update:modelValue'])
   color: var(--color-text);
   font-size: var(--font-size-sm);
   outline: none;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
 .field-input::placeholder {

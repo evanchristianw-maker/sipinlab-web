@@ -2,28 +2,28 @@
 defineProps({
   variant: {
     type: String,
-    default: 'primary' // primary | secondary | danger | ghost
+    default: 'primary', // primary | secondary | danger | ghost
   },
   size: {
     type: String,
-    default: 'md' // md | sm
+    default: 'md', // md | sm
   },
   type: {
     type: String,
-    default: 'button'
+    default: 'button',
   },
   disabled: {
     type: Boolean,
-    default: false
+    default: false,
   },
   loading: {
     type: Boolean,
-    default: false
+    default: false,
   },
   block: {
     type: Boolean,
-    default: false
-  }
+    default: false,
+  },
 })
 </script>
 
@@ -52,7 +52,10 @@ defineProps({
   font-weight: 600;
   cursor: pointer;
   white-space: nowrap;
-  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
 }
 
 .btn-sm {

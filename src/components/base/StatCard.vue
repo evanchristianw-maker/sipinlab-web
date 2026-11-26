@@ -4,24 +4,24 @@ import AppIcon from './AppIcon.vue'
 defineProps({
   label: {
     type: String,
-    default: ''
+    default: '',
   },
   value: {
     type: [String, Number],
-    default: 0
+    default: 0,
   },
   icon: {
     type: String,
-    default: ''
+    default: '',
   },
   tone: {
     type: String,
-    default: 'primary' // primary | success | warning | danger | info
+    default: 'primary', // primary | success | warning | danger | info
   },
   note: {
     type: String,
-    default: ''
-  }
+    default: '',
+  },
 })
 </script>
 

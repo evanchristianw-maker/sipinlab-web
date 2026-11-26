@@ -4,8 +4,8 @@ import { computed } from 'vue'
 const props = defineProps({
   value: {
     type: String,
-    default: ''
-  }
+    default: '',
+  },
 })
 
 const config = computed(() => {
@@ -20,7 +20,7 @@ const config = computed(() => {
     perawatan: { label: 'Perawatan', tone: 'warning' },
     rusak_ringan: { label: 'Rusak Ringan', tone: 'warning' },
     ditolak: { label: 'Ditolak', tone: 'danger' },
-    rusak_berat: { label: 'Rusak Berat', tone: 'danger' }
+    rusak_berat: { label: 'Rusak Berat', tone: 'danger' },
   }
   return map[val] || { label: props.value || '-', tone: 'neutral' }
 })

@@ -17,16 +17,27 @@ const paths = {
   search: 'M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14zM21 21l-5-5',
   menu: 'M4 6h16M4 12h16M4 18h16',
   check: 'M5 12l5 5L20 7',
-  alert: 'M12 9v4M12 17h.01M10.3 3.9 2.5 18a2 2 0 0 0 1.7 3h15.6a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z',
-  wifiOff: 'M2 2l20 20M8.5 16.5a5 5 0 0 1 7 0M5 13a10 10 0 0 1 5.2-2.7M19 13a10 10 0 0 0-2.4-1.7M2 8.8a15 15 0 0 1 4.2-2.6M22 8.8A15 15 0 0 0 10.7 5M12 20h.01',
+  alert:
+    'M12 9v4M12 17h.01M10.3 3.9 2.5 18a2 2 0 0 0 1.7 3h15.6a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z',
+  wifiOff:
+    'M2 2l20 20M8.5 16.5a5 5 0 0 1 7 0M5 13a10 10 0 0 1 5.2-2.7M19 13a10 10 0 0 0-2.4-1.7M2 8.8a15 15 0 0 1 4.2-2.6M22 8.8A15 15 0 0 0 10.7 5M12 20h.01',
   download: 'M12 4v12M7 11l5 5 5-5M5 20h14',
   undo: 'M9 14 4 9l5-5M4 9h11a5 5 0 0 1 0 10h-3',
 }
 </script>
 
 <template>
-  <svg :width="props.size" :height="props.size" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <svg
+    :width="props.size"
+    :height="props.size"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+  >
     <path :d="paths[props.name]" />
   </svg>
 </template>
